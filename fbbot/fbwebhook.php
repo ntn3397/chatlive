@@ -4,7 +4,6 @@
 		echo $_GET['hub_challenge'];
 	} else {
 		$feedData = file_get_contents('php://input');
-		
 		$handle = fopen('test.txt', 'w');
 		fwrite($handle,$feedData);
 		fclose($handle);
